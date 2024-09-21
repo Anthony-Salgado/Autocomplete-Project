@@ -38,18 +38,32 @@ Header file containing declarations for functions and structures used in `autoco
    gcc autocomplete.c -o autocomplete -lm
 2. After compiling, run the program with ./autocomplete
 3. The input file (e.g., cities.txt) should be formatted as follows:
+
   n
+
 weight    term
+
 weight    term
+
 ...
+
 Where:
 n is the number of terms.
+
 Each subsequent line contains a term and its corresponding weight, separated by a tab.
+
 Example:
+
 5
+
 1000    New York
+
 800     Los Angeles
+
 600     Toronto
+
 500     San Francisco
+
 400     Chicago
+
 The autocomplete function finds all terms matching the specified prefix and returns them sorted by weight. For instance, searching for the prefix "Tor" would yield Toronto with its corresponding weight.
